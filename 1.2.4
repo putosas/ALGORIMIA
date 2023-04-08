@@ -1,0 +1,26 @@
+Proceso sin_titulo
+	Definir A1 Como Caracter;
+	Definir A2 Como Real;
+	Escribir 'INGRESA UN NUMERO ROMANO';
+	Leer A1;
+	Si A1='I' Entonces
+		A2 <- 1;
+	SiNo
+		Si A1='II' Entonces
+			A2 <- 2;
+		SiNo
+			Si A1='III' Entonces
+				A2 <- 3;
+			SiNo
+				Si A1='IV' Entonces
+					A2 <- 4;
+				SiNo
+					Si A1='V' Entonces
+						A2 <- 5;
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	Escribir ' EL NUMERO ES ',A2;
+FinProceso

@@ -1,0 +1,21 @@
+Proceso sin_titulo
+	Definir A1,A2,OPCION COMO REAL;
+	Escribir "SELECCIONES OPCCION";
+	Escribir "1:CELSUIS   2: KELVIN";
+	Leer OPCION;
+	
+	
+	SI OPCION==1 Entonces
+		Escribir "INGRESE grados FAHREHEIR ";
+		Leer A2;
+		A1<-(A2-32)*5/9;;
+		Escribir "FAHREHEIR A CELSUIS " ,  A1 ;
+	SiNo
+		SI OPCION ==2 Entonces
+			Escribir "INGRESA GRADOS FAHREHEIR";
+			Leer A2;
+			A1<-(A2-32)*5/9+273.15;
+			Escribir " FAHREHEIR A KELVIN " ,  A1 ;
+		FinSi
+	FinSi
+FinProceso

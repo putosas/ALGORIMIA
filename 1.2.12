@@ -1,0 +1,23 @@
+Proceso sin_titulo
+	Definir A1,A2,OPCION COMO REAL;
+	Escribir "SELECCIONES OPCCION";
+	Escribir "1:KELVIN   2: FAREHEIT";
+	Leer OPCION;
+	
+	
+	SI OPCION==1 Entonces
+		Escribir "INGRESE CENTIGRADOS";
+		Leer A2;
+		A1<-A2+273.15;
+		Escribir "CELSUIS A KELVIN ES DE " ,  A1 ;
+	SiNo
+		SI OPCION ==2 Entonces
+			Escribir "INGRESA CENTIGRADOS";
+			Leer A2;
+			A1<-(A2*(9/5))+32;
+			Escribir " CELSISUS A FAHREHEIR ES DE " ,  A1 ;
+		FinSi
+	FinSi
+	
+	
+FinProceso

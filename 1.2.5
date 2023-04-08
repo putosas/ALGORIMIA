@@ -1,0 +1,64 @@
+Proceso sin_titulo
+	Definir AREA ,OPCCION,A1,A2,A3,A4,a,b,c ,S  Como Real;
+	Escribir "SELECCIONE SU OPICION";
+	Escribir " 1.TRAPECION  2.TRIANGULO 3.CUADRADO 4. RECTANGULO 5.CIRCUFERENCIA ";
+	Leer OPCCION;
+	
+	
+	
+	SI OPCCION==1 Entonces
+		
+			Escribir "BASE MENOR";
+			Leer A1;
+			Escribir " BASE MAYOR";
+			leer A2;
+			Escribir "ESCRIBIR ALTURA";
+			leer A3;
+			area<- ((A2 + A1) * A3) / 2;
+		    Escribir "AREA DE TRAPECIO ES " ,  AREA ;
+		SiNo
+			SI OPCCION==2 Entonces
+				
+				Escribir " Ingresa los tres lados ";
+				leer a,b,c;
+				A1<- a+b+c;
+				S <- A1 / 2;
+				area <- rc(s*(s-a)*(s-b)*(s-c));    
+				Escribir " AREA DE UN TRIANGULO ES DE " ,  area  ;
+				
+				
+			SINO 
+				
+				SI OPCCION==3 Entonces
+					Escribir " INGRES UNOS DE LOS LADOS DEL CUADRADO ";
+					Leer A2;
+					area<-A2^2;
+					Escribir "AREA DE CUADRADO  ES DE  " , AREA ;
+					
+				SINO 
+					SI OPCCION==4 Entonces
+						Escribir "INGRESE EL LARGO";
+						Leer A2;
+						Escribir "INGRESE EL ANCHO";
+						Leer A3;
+						AREA<-A2*A3;
+						Escribir " AREA DE RECTANGULO ES DE " , AREA ;
+					SiNo
+						SI OPCCION==5 Entonces
+							Escribir "INGRESE EL RADIO DEL CIRCULO";
+							Leer A4;
+							
+							AREA<-3.1416 * (A4*A4) ;
+							
+							Escribir "AREA DE UN CIRCULO ES DE "  , AREA ;
+						FinSi
+					FinSi
+					
+				FinSi
+			FinSi
+	
+	
+	
+		FinSi
+		
+FinProceso

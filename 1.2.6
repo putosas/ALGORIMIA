@@ -1,0 +1,45 @@
+Proceso sin_titulo
+		Definir VOL ,OPCCION,A1,A2,A3,A4,a,b,c ,S  Como Real;
+		Escribir "SELECCIONE SU OPICION";
+		Escribir " 1.CUBO  2.CILINDRO  3.ESFERA 4.CONO ";
+		Leer OPCCION;
+		
+		
+		SI OPCCION==1 Entonces
+			Escribir " INGRESE UNO DE LOS LADOS DEL CUBO ";
+			Leer A1;
+			VOL<-A1*A1*A1;
+			Escribir "EL VOLUMEN DE UN CUBO ES DE " , VOL ;
+		SiNo
+			SI OPCCION==2 Entonces
+				Escribir "INGRESA EL RADIO ";
+				Leer A1;
+				Escribir "INGRESA LA ALTURA";
+				Leer A2;
+				VOL<-3.1416*A1^2*A2;
+				Escribir "EL VOLUMEN DE UN CILINDRO ES DE " , VOL ;
+			SiNo
+				SI OPCCION==3 Entonces
+					Escribir "Escribe el radio de la esfera";
+					leer A1;
+					VOL<-(4/3) * 3.1416 * (A1*A1*A1);
+					Escribir "El volumen de la esfera es: ",   VOL ;
+					
+				SINO 
+					SI OPCCION==4 Entonces
+						Escribir "ESCRIBIR EL RADIO ";
+						Leer A1;
+						Escribir "ESCRIBIR EL ALTURA";
+						Leer A2;
+						VOL<-1/3*3.1416*A1*A2;
+						Escribir "VOLUMEN DEL CONO ES DE " , VOL ;
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+		
+		
+		
+		
+		
+FinProceso

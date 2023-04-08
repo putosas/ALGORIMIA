@@ -1,0 +1,38 @@
+Proceso sin_titulo
+	Definir MONEDA, PESOS ,FRANCOS,BOLIVAR,DOLAR, SOLES COMO REAL;
+	Escribir " SELECIONES OPICONES  1:PESOS 2:DOLAR 3:BOLIVAR 4:FRANCO";
+	Leer MONEDA;
+	Escribir "INGRESE VALOR ";
+	Leer SOLES;
+	
+	
+	SI MONEDA==1 Entonces
+		PESOS<-1216.74*SOLES;
+		Escribir " VALOR FRANCOS " , PESOS ;
+	FinSi
+	
+	
+	
+	
+	
+	SI MONEDA == 2 Entonces
+		DOLAR<-0.27*SOLES;
+		Escribir "VALOR BOLIVAR       " , DOLAR ;
+		
+	SiNo
+		
+		
+		SI MONEDA==3 Entonces
+			BOLIVAR<-1.84*SOLES;
+			Escribir "VALOR A PESOS   "  , BOLIVAR;
+			
+		SiNo
+			
+			
+			SI MONEDA==4 Entonces
+				FRANCOS<-0.24*SOLES;
+				Escribir " VALOR A SUCRES   " , FRANCOS ;
+			FinSi
+		FinSi
+	FinSi
+FinProceso
